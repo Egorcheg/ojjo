@@ -16,6 +16,12 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 npm install
 ```
 
+### Run local API
+
+```sh
+npm run init-server
+```
+
 ### Compile and Hot-Reload for Development
 
 ```sh
@@ -26,10 +32,4 @@ npm run dev
 
 ```sh
 npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
 ```
