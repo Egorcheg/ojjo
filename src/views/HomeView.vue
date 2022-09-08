@@ -484,6 +484,10 @@ const accordionLeave = (el) => {
                     margin-top: 15px;
                     .typoNormalLarge();
                 }
+
+                &Svg {
+                    width: 70px;
+                }
             }
         }
     }

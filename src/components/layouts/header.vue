@@ -58,7 +58,7 @@
                 </ul>
             </nav>
             <div class="CommonHeader-mobileIcons CommonHeader-icons">
-                <button class="CommonHeader-iconsItem">
+                <button class="CommonHeader-iconsItem ">
                     <icon name="profile" :size="50" color="#ffffff" class="CommonHeader-iconsItemIcon" />
                 </button>
                 <button class="CommonHeader-iconsItem">
@@ -199,6 +199,7 @@ function openMenu () {
             position: relative;
             z-index: @z-header-up-mobile-menu;
             display: block;
+            width: 50px;
         }
     }
 
@@ -216,6 +217,7 @@ function openMenu () {
 
         &Icon {
             position: absolute;
+            width: 24px;
         }
 
         &Input {
@@ -260,6 +262,7 @@ function openMenu () {
         align-items: center;
 
         &Item {
+            width: 24px;
             transition: opacity @e-hover @d-hover;
 
             &:hover {
@@ -326,6 +329,10 @@ function openMenu () {
             margin: 0 auto 25px;
             padding-bottom: 25px;
             border-bottom: 1px solid white;
+
+            &Item {
+                width: 50px;
+            }
         }
 
         &Social {
@@ -336,6 +343,7 @@ function openMenu () {
             &Item {
                 display: flex;
                 align-items: center;
+                width: 39px;
 
                 &:not(:last-child) {
                     margin-right: 20px;

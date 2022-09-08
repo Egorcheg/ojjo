@@ -132,6 +132,10 @@ import Icon from '@/components/ui/icons/icon.vue'
 
         &:not(:last-child) {
             margin-bottom: 60px;
+
+            @media @m-mobile {
+                margin-bottom: 30px;
+            }
         }
 
         &.border {
@@ -150,6 +154,7 @@ import Icon from '@/components/ui/icons/icon.vue'
 
         @media @m-mobile {
             width: 100%;
+            margin-top: 15px;
         }
 
         &.fluid {
@@ -158,7 +163,7 @@ import Icon from '@/components/ui/icons/icon.vue'
             width: 100%;
 
             @media @m-mobile {
-                flex-wrap: wrap;
+                flex-direction: column;
             }
         }
 
@@ -222,6 +227,8 @@ import Icon from '@/components/ui/icons/icon.vue'
         &Item {
             display: flex;
             align-items: center;
+            width: 24px;
+            height: 24px;
             transition: opacity @e-hover @d-hover;
 
             &:hover {
@@ -234,6 +241,14 @@ import Icon from '@/components/ui/icons/icon.vue'
 
             &:not(:last-child) {
                 margin-right: 20px;
+            }
+        }
+    }
+
+    &-text {
+        &:not(:last-child) {
+            @media @m-mobile {
+                margin-bottom: 5px;
             }
         }
     }

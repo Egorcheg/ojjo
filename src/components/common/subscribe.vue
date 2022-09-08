@@ -118,6 +118,8 @@ const sendForm = () => {
                 }
 
                 svg {
+                    width: 17px;
+                    height: 17px;
                     margin-right: 20px;
                 }
             }
