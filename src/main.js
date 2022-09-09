@@ -17,8 +17,8 @@ import './assets/less/layouts.less';
 const app = createApp(App);
 
 app.use(VueLazyLoad, {
-    loading: '/src/assets/pics/error-image.jpg',
-    error: '/src/assets/pics/error-image.jpg',
+    loading: '',
+    error: '',
     lifecycle: {
         loading: (el) => {
             // console.log('loading', el);
