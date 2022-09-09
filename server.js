@@ -8,7 +8,7 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 server.use(jsonServer.bodyParser);
 server.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', 'http://localhost:' + process.env.VITE_SITE_PORT);
+    res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', '*');
     // Continue to JSON Server router
     next();
